@@ -1,0 +1,255 @@
+*{  
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #020412;
+}
+.hero{
+    min-height:700px;
+    width: 100%;
+    color: rgb(250,250,250);
+    position: relative;
+    display: grid;
+    grid-template-columns: 120% 20%;
+    column-gap: 1rem;
+    justify-items: center;
+}
+
+.lamp-container{
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 150px;
+}
+.lamp{
+    width: 100%;
+}
+
+.light{
+    position: absolute;
+    top: 97%;
+    left: 46%;
+    transform: translate(-50%);
+    width: 530px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+label{
+    margin-top: 200px;
+    transform: rotate(-90deg);
+    height: 55px;
+}
+@media (max-width: 600px) {
+    label{
+        margin-left: 150px;
+    }
+    .lamp{
+        width: 50%;
+    }
+    
+    .light{
+        width:250px;
+        left: 24%;
+    }
+}
+@media (min-width: 600px) {
+    label{
+        margin-left: 150px;
+    }
+}
+/*@media (min-width: 400px) {
+    label{
+        margin-left: 350px;
+    }
+}
+/*@media (max-width: 360px) {
+    label{
+        margin-left: 150px;
+    }
+}*/
+
+.skeuo__switch {
+    display: none;
+}
+
+.skeuo__button {
+    width: 6rem;
+    background: linear-gradient(90deg, #444650 0%, #101113 100%);
+    padding: .75rem 1.25rem .75rem 1rem;
+    border-radius: 3rem;
+    box-shadow: inset -2px 0 18px #212227,
+                inset -14px 0 6px #43454F,
+                inset 4px 0 6px #151619;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .2s;
+}
+
+.skeuo__circle {
+    font-size: 18px;
+    color: #5CCC9D;
+}
+
+.skeuo__line {
+    transform: rotate(90deg);
+    font-size: 22px;
+    color: #9699A6;
+}
+
+/* Button animation effects */
+.skeuo__switch:checked ~ .skeuo__button {
+    background: linear-gradient(90deg, #101113 0%, #444650 100%);
+    box-shadow: inset -2px 0 18px #212227,
+                inset -4px 0 6px #151619,
+                inset 14px 0 6px #43454F;
+    padding: .75rem 1rem .75rem 1.25rem;
+}
+
+.skeuo__switch:checked ~ .skeuo__button .skeuo__circle {
+    font-size: 20px;
+}
+
+.skeuo__switch:checked ~ .skeuo__button .skeuo__line {
+    font-size: 18px;
+}
+
+.on{
+    opacity: 1;
+}
+
+.text-box{
+    font-size: 17px;
+    letter-spacing: 1px;
+    visibility: hidden;
+    color: white;
+}
+.text-box p{
+    visibility: visible;
+    line-height: 0px;
+}
+.text-box h1{
+    line-height: 160px;
+}
+
+
+.text-box h1 span{
+    line-height: 160px;
+    color: #fff724;
+}
+
+.in{
+    visibility: visible;
+}
+
+
+/*@media (min-width: 930px) {
+    .text-box{
+        margin-top: -40%;
+    }
+    .text-box h1,
+    .text-box h1 span{
+        font-size: 40px;
+    }
+}*/
+@media (min-width: 200px) {
+    .text-box{
+        margin-top: -100%;
+        margin-left: 10%;
+    }
+    .text-box h1,
+    .text-box h1 span{
+        font-size: 20px;
+    }
+}
+@m
+@media (min-width: 300px) {
+    .text-box{
+        margin-top: -70%;
+        margin-left: 10%;
+    }
+    .text-box h1,
+    .text-box h1 span{
+        font-size: 30px;
+    }
+}
+@media (min-width: 400px) {
+    .text-box{
+        margin-top: -60%;
+        margin-left: 10%;
+    }
+    .text-box h1,
+    .text-box h1 span{
+        font-size: 30px;
+    }
+}
+@media (min-width: 500px) {
+    .text-box{
+        margin-top: -50%;
+        margin-left: 10%;
+    }
+    .text-box h1,
+    .text-box h1 span{
+        font-size: 30px;
+    }
+}
+@media (min-width: 600px) {
+    .text-box{
+        margin-top: -31%;
+        margin-left: 10%;
+    }
+    .text-box h1,
+    .text-box h1 span{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 678px) {
+    .text-box{
+        margin-top: -45%;
+        margin-left: 55%;
+    }
+    .text-box h1,
+    .text-box h1 span{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 778px) {
+    .text-box{
+        margin-top: -45%;
+    }
+}
+@media (min-width: 778px) {
+    .text-box{
+        margin-top: -40%;
+    }
+}
+
+@media (min-width: 930px) {
+    .text-box{
+        margin-top: -35%;
+    }
+    .text-box h1,
+    .text-box h1 span{
+        font-size: 42px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .text-box{
+        margin-top: -20%;
+    }
+    .text-box h1,
+    .text-box h1 span{
+        font-size: 55px;
+    }
+}
+
+/*
+/*

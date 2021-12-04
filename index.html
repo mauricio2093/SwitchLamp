@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lamp and Light</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="lamp-container">
+            <img src="images/lamp.png" class="lamp">
+            <img src="images/light.png" class="light" id="light">
+        </div>
+        <label>
+            <input type="checkbox" class="skeuo__switch" onclick="toggleBtn()" id="btn">
+            <div class="skeuo__button">
+                <i class='bx bx-minus skeuo__line'></i>
+                <i class='bx bx-circle skeuo__circle'></i>
+            </div>
+        </label>
+    </div>
+    <div class="text-box" id="text">
+        <h1>Ilumina<span class="auto-input"></span></h1>
+        <p>Mauricio's Proyects</p>
+    </div>
+
+<script  src = " https://cdn.jsdelivr.net/npm/typed.js@2.0.12 " > </script>
+<script>
+    var typed = new Typed(".auto-input",{
+        strings:    ["Tu Vida","Tu Mente","Tu Corazón"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+    })
+    var light = document.getElementById("light")
+    var text = document.getElementById("text")
+    function toggleBtn(){ 
+        light.classList.toggle("on");
+        text.classList.toggle("in");
+    }
+</script>
+</body>
+</html>
