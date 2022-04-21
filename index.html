@@ -6,28 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Lamp and Light</title>
-
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 
-<body>
+<body   id="body">
+    <button type="button" onclick="toggle_Btn()" id="btn">
+        <span>
+            <div class="dark">
+            <i class="ri-moon-line change"></i>
+            <i class="ri-sun-line change"></i>
+            </div>
+        </span>
+    </button>
     <div class="hero">
         <div class="lamp-container">
             <img src="images/lamp.png" class="lamp">
             <img src="images/light.png" class="light" id="light">
         </div>
         <label>
-            <input type="checkbox" class="skeuo__switch" onclick="toggleBtn()" id="btn">
+            <input type="checkbox" class="skeuo__switch" onclick="toggleBtn()">
             <div class="skeuo__button">
                 <i class='bx bx-minus skeuo__line'></i>
                 <i class='bx bx-circle skeuo__circle'></i>
             </div>
         </label>
     </div>
-    <div class="text-box" id="text">
+    <div class="text-box content" id="text">
+        
         <h1>Ilumina<span class="auto-input"></span></h1>
-        <p>Mauricio's Proyects</p>
+        <div class="contact">
+            <p>Mauricio's Proyects</p>
+            <a href="https://github.com/mauricio2093/SwitchLamp" class="git" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#636363" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+            </svg>
+        </a>
+        
+        </div>
     </div>
 
 <script  src = " https://cdn.jsdelivr.net/npm/typed.js@2.0.12 " > </script>
@@ -40,10 +60,20 @@
     })
     var light = document.getElementById("light")
     var text = document.getElementById("text")
+    var btn = document.getElementById("btn")
+    var body = document.getElementById("body")
     function toggleBtn(){ 
         light.classList.toggle("on");
         text.classList.toggle("in");
     }
+
+    function toggle_Btn(){
+        body.classList.toggle("active")
+    }
+    var input = document.createElement("input");
+    input.type = "text";
+    input.className = "css-class-name"; // set the CSS class
+    container.appendChild(input);
 </script>
 </body>
 </html>
