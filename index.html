@@ -9,7 +9,7 @@
     <!--=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     
 </head>
 
@@ -24,8 +24,8 @@
     </button>
     <div class="hero">
         <div class="lamp-container">
-            <img src="images/lamp.png" class="lamp">
-            <img src="images/light.png" class="light" id="light">
+            <img src="assets/images/lamp.png" class="lamp">
+            <img src="assets/images/light.png" class="light" id="light">
         </div>
         <label>
             <input type="checkbox" class="skeuo__switch" onclick="toggleBtn()">
@@ -36,8 +36,7 @@
         </label>
     </div>
     <div class="text-box content" id="text">
-        
-        <h1>Ilumina<span class="auto-input"></span></h1>
+        <h1 class="text-dinamic">Ilumina<span class="auto-input"></span></h1>
         <div class="contact">
             <p>Mauricio's Proyects</p>
             <a href="https://github.com/mauricio2093/SwitchLamp" class="git" target="_blank">
@@ -51,29 +50,6 @@
     </div>
 <!-- JavaScript -->
 <script  src = " https://cdn.jsdelivr.net/npm/typed.js@2.0.12 " > </script>
-<script>
-    var typed = new Typed(".auto-input",{
-        strings:    ["Tu Vida","Tu Mente","Tu Corazón"],
-        typeSpeed: 100,
-        backSpeed: 100,
-        loop: true
-    })
-    var light = document.getElementById("light")
-    var text = document.getElementById("text")
-    var btn = document.getElementById("btn")
-    var body = document.getElementById("body")
-    function toggleBtn(){ 
-        light.classList.toggle("on");
-        text.classList.toggle("in");
-    }
-
-    function toggle_Btn(){
-        body.classList.toggle("active")
-    }
-    var input = document.createElement("input");
-    input.type = "text";
-    input.className = "css-class-name"; // set the CSS class
-    container.appendChild(input);
-</script>
+<script src="assets/js/app.js"></script>
 </body>
 </html>
